@@ -17,15 +17,15 @@ func main() {
 
 		res := &response{Message: "Hello Tech Demo - CodePipeline !:) "}
 
-		for _, e := range os.Environ() {
-			pair := strings.Split(e, "=")
-			res.EnvVars = append(res.EnvVars, pair[0]+"="+pair[1])
-		}
-		sort.Strings(res.EnvVars)
+		//for _, e := range os.Environ() {
+		//	pair := strings.Split(e, "=")
+		//	res.EnvVars = append(res.EnvVars, pair[0]+"="+pair[1])
+		//}
+		//sort.Strings(res.EnvVars)
 
-		for i := 1; i <= 90; i++ {
+		//for i := 1; i <= 90; i++ {
 			res.Fib = append(res.Fib, f())
-		}
+		//}
 
 		// Beautify the JSON output
 		out, _ := json.MarshalIndent(res, "", "  ")
