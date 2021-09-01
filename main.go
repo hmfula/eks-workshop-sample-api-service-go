@@ -24,7 +24,7 @@ func main() {
 		//sort.Strings(res.EnvVars)
 
 		//for i := 1; i <= 90; i++ {
-			res.Fib = append(res.Fib, f())
+		//	res.Fib = append(res.Fib, f())
 		//}
 
 		// Beautify the JSON output
