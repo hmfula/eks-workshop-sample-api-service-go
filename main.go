@@ -28,12 +28,12 @@ func main() {
 		//}
 
 		// Beautify the JSON output
-		out, _ := json.MarshalIndent(res, "", "  ")
+		//out, _ := json.MarshalIndent(res, "", "  ")
 
 		// Normally this would be application/json, but we don't want to prompt downloads
 		w.Header().Set("Content-Type", "text/plain")
 
-		io.WriteString(w, string(out))
+		io.WriteString(w, string(res))
 
 		fmt.Println("Hello world - the log message")
 	})
